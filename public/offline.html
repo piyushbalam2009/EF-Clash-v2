@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EF Clash - Offline</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0D1117 0%, #161B22 100%);
+            color: #F0F6FC;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            padding: 2rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00FFFF;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+        .message {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #8B949E;
+        }
+        .retry-btn {
+            background: linear-gradient(45deg, #8B5CF6, #00FFFF);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
+            transition: transform 0.2s;
+        }
+        .retry-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">⚡ EF CLASH</div>
+        <div class="message">You're offline</div>
+        <p>Check your internet connection and try again.</p>
+        <button class="retry-btn" onclick="window.location.reload()">Retry</button>
+    </div>
+</body>
+</html>
