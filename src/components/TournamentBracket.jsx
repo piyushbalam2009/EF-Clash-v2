@@ -15,6 +15,8 @@ import { motion } from 'framer-motion'
 import { FiPlay, FiClock, FiCheck } from 'react-icons/fi'
 
 const MotionCard = motion(Card)
+transition="all 0.3s ease"
+transition={{ duration: 0.5, delay: matchIndex * 0.1 }}
 
 const MatchCard = ({ match, roundIndex, matchIndex }) => {
   const getStatusColor = (status) => {
